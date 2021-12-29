@@ -22,7 +22,7 @@ I ain't ever trapped out the bando
 But oh Lord, don't get me wrong, (...)
 ''')
 
-small_data = pd.read_pkl('data/vadered&no_lyrics.pkl')
+small_data = pd.read_pkl('data/vadered&no_lyrics.pkl', compression={'method':'zip'})
 
 
 def song_recs (sentence):
