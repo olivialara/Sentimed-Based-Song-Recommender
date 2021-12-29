@@ -26,8 +26,8 @@ But oh Lord, don't get me wrong, (...)
 # small_data = pd.read_pkl('data/vadered&no_lyrics.pkl', 'rb', compression={'method':'zip'})
 
 # load model
-with open('data/vadered&no_lyrics.pkl', 'rb') as f:
-    small_data = pickle.load(f)
+with gzip.open('data/vadered&no_lyrics.pkl', 'rb') as ifp:
+    small_data = pickle.load(ifp)
 
 
 def song_recs (sentence):
