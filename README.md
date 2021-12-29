@@ -17,7 +17,7 @@ The two graphs below demonstrate the most popular words songs with high and low 
 ![Sentiment Score vs Lyric Word Count](images/pop-words-in-lyrics-low-sentiment.png)
 
 ​
-The final product is an interactive website which allows users to input text and get the recommendations included in the link below. Additionally here is a link to the repository with the full data and code that went into this project: <a href>https://we.tl/t-Q0PXuoZ46v</a> <br>
+The final product is an interactive website which allows users to input text and get the recommendations included in the link below. You can find the website here: <a href>https://share.streamlit.io/olivialara/sentiment-based-song-recommender/main/code/III-Application.py</a> <br>
 ​
 Recommendations for future development of this project include expanding the dataset to more songs and including genre for recommendations.
 ​
