@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import nltk
+#  import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
