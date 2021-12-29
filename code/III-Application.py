@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import pickle
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -22,7 +23,11 @@ I ain't ever trapped out the bando
 But oh Lord, don't get me wrong, (...)
 ''')
 
-small_data = pd.read_pkl('data/vadered&no_lyrics.pkl', 'rb', compression={'method':'zip'})
+# small_data = pd.read_pkl('data/vadered&no_lyrics.pkl', 'rb', compression={'method':'zip'})
+
+# load model
+with open('data/vadered&no_lyrics.pkl', 'rb') as f:
+    small_data = pickle.load(f)
 
 
 def song_recs (sentence):
