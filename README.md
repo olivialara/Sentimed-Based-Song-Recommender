@@ -1,4 +1,4 @@
-## Music Mood Recommender
+## Sentiment Based Song Recommender
 ​
 #### PROJECT OVERVIEW
 ​
