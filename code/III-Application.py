@@ -8,7 +8,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 st.title("Song Recommender")
 st.header("Feeling sad? Feeling angry? Feeling Euphoric?")
 st.subheader("Input the lyrics to a song you want to feel like and we'll give you some similar songs.")
-st.image('../images/faces.jpg')
+st.image('images/faces.jpg')
 
 genre = st.radio(
     "Do you want similar or happier songs?",
@@ -22,7 +22,7 @@ I ain't ever trapped out the bando
 But oh Lord, don't get me wrong, (...)
 ''')
 
-small_data = pd.read_pickle('../data/vadered&no_lyrics.pkl', compression={'method':'zip'})
+small_data = pd.read_pickle('data/vadered&no_lyrics.pkl', compression={'method':'zip'})
 
 
 def song_recs (sentence):
